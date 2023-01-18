@@ -20,7 +20,9 @@ const SearchModal = (props) => {
     context.setAllMail(AllMail)
   },[])
   const handleAdd = (mail) => {
-    context.setSelectedCat();
+   navigate("/")
+    context.setcardState(true)
+    context.setSelectedCat(context.inbox);
     context.setCurrentMail(mail);
     props.closeModal()
     }
